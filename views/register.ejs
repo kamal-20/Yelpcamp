@@ -1,0 +1,73 @@
+<%- include("partials/header") %>
+
+    <div class="card" id="form-card lg-col-12 md-col-12 sm-col-12">
+        <h5 class="card-header info-color white-text text-center">
+            <strong>Sign up</strong>
+        </h5>
+        <div class="card-body">
+
+            <form class="text-center" style="color: #757575;" action="/register" method="post">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="md-form">
+                            <input type="text" id="materialRegisterFormFirstName" name="firstname" class="form-control"required>
+                            <label for="materialRegisterFormFirstName">first name</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="md-form">
+                            <input type="text" id="materialRegisterFormFirstName" name="lastname" class="form-control" required>
+                            <label for="materialRegisterFormFirstName">last name</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="md-form">
+                            <input type="email" id="materialRegisterFormFirstName" name="email" class="form-control"required>
+                            <label for="materialRegisterFormFirstName">email</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="md-form">
+                            <input type="text" id="materialRegisterFormFirstName" name="avatar" class="form-control" required>
+                            <label for="materialRegisterFormFirstName">avatar url</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="md-form">
+                            <input type="text" id="materialRegisterFormFirstName" name="username" class="form-control" required>
+                            <label for="materialRegisterFormFirstName">Username</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="md-form">
+                            <input type="password" id="materialRegisterFormPassword" name="password"  class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
+                            <label for="materialRegisterFormPassword">Password</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign up</button>
+                    </div>
+                </div>
+                <!-- Social register -->
+                <p>or sign up with:</p>
+
+                <a type="button" class="btn-floating btn-fb btn-sm">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a type="button" class="btn-floating btn-tw btn-sm">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a type="button" class="btn-floating btn-li btn-sm">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a type="button" class="btn-floating btn-git btn-sm">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <hr>
+            </form>
+            <!-- Form -->
+            </div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,30 @@
+<%- include("../partials/header") %>
+<div class="container">
+    <div class="jumbotron card card-image">
+        <div class="container" style="text-align: center;">
+            <h1>List of some best Campgrounds around the Globe</h1>
+            <p>I have zero experience in camping but like every Indian , i will give unnecessary recommendations..</p>
+            <a class="btn peach-gradient btn-lg" href="/campgrounds/new">Add a new Campground</a>
+        </div>
+    </div>
+    <div class="row">
+            <% campgrounds.forEach(function(campgrounds) { %>
+                <div class="card col-lg-3 col-md-6 ">
+                    <div class="view overlay">
+                        <img class="img-fluid" src="<%=campgrounds.image%>" alt="">
+                        <a>
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                            <h4 class="card-title"><%= campgrounds.name %></h4>
+                            <p>
+                                <a href="/campgrounds/<%= campgrounds._id %>" class="btn btn-danger">More Info.</a>
+                            </p>
+                    </div>
+                    </div>
+            <%}) %>
+    </div>
+
+</div>
+<%- include("../partials/footer") %>

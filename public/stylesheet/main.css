@@ -1,0 +1,42 @@
+.jumbotron{
+    margin-bottom: 30px;
+}
+.view{
+    width: 100%;
+}
+.navbar-toggler{
+    z-index: 1;
+}
+#delete-form {
+    display: inline;
+}
+html {
+font-size: .8em;
+}
+
+#form-card{
+    width: 40%;
+    margin: auto;
+}
+
+@include media-breakpoint-up(sm) {
+html {
+font-size: 1.2em;
+}
+}
+
+@include media-breakpoint-up(md) {
+html {
+font-size: 1.4em;
+}
+}
+
+@include media-breakpoint-up(lg) {
+html {
+font-size: 1.6em;
+}
+}
+
+.navbar .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=fff');
+}
